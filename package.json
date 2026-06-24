@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "router": "^2.2.0"
+  }
+}

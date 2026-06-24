@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 14px clamp(14px, 3vw, 50px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(0, 0, 0, 0);
+}
+
+
+.logo img {
+  width: clamp(72px, 10vw, 120px);
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: clamp(14px, 2vw, 30px);
+  font-family: "Comic Neue", cursive;
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 600;
+  color: inherit;
+}
+
+.nav-links a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  color: inherit;
+}
+
+.nav-links a:hover {
+  color: #143783;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+
+.btn {
+  font-family: "Comic Neue", cursive;
+  padding: 9px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+}
+
+
+.btn-outline {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+}
+
+.btn-fill {
+  background: #143783;
+  border-color: #143783;
+  color: wheat;
+}
+
+.btn-fill:hover {
+  background: transparent;
+  color: wheat;
+}
+
+@media (max-width: 840px) {
+  .nav-links {
+    display: none;
+  }
+}
+
